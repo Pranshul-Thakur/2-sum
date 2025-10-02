@@ -2,17 +2,6 @@
 
 Implementation of the classic Two Sum algorithm in x86 assembly language using NASM syntax.
 
-## Problem
-
-Given an array of integers and a target sum, find if any two numbers add up to the target.
-
-## Algorithm
-
-Brute force O(n²) approach:
-- Nested loops iterate through all pairs
-- Checks if sum equals target
-- Sets `found` flag to 1 if match exists
-
 ## Code Structure
 
 ```asm
@@ -57,15 +46,3 @@ Input: `[3, 5, 7, 9]`, Target: `12`
 - `ebx`: Inner loop index (j)
 - `esi`: First number
 - `edi`: Second number
-
-## Requirements
-
-- NASM assembler
-- 32-bit x86 Linux environment
-- `ld` linker
-
-## Notes
-
-- Uses Linux syscall convention (`int 0x80`)
-- 32-bit integer operations
-- No bounds checking or error handling
